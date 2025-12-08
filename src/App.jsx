@@ -197,7 +197,7 @@ const LoginPage = ({ onLogin }) => {
     setLoading(true);
 
     try {
-      const res = await fetch("https://sayorsuddae.xo.je/api/login.php", {
+      const res = await fetch("https://inventory-backend-apn6.onrender.com/api/login.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -555,7 +555,7 @@ const handleTransaction = async (type) => {
   }
 
   try {
-    const res = await fetch('https://sayorsuddae.xo.je/api/inventory_update.php', {
+    const res = await fetch('https://inventory-backend-apn6.onrender.com/api/inventory_update.php', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
