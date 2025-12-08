@@ -924,7 +924,7 @@ const res = await fetch(`${API_BASE_URL}/inventory_update.php`, {
               <div className="flex flex-wrap gap-3 w-full sm:w-auto">
                 <button
                   onClick={() => setModalOpen("sale")}
-                  className="group relative flex-1 sm:flex-auto flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-2xl hover:shadow-2xl hover:shadow-blue-500/50 transition-all duration-300 font-semibold overflow-hidden transform hover:scale-105"
+                  className="group relative flex-1 sm:flex-auto flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-gray-400 rounded-2xl hover:shadow-2xl hover:shadow-blue-500/50 transition-all duration-300 font-semibold overflow-hidden transform hover:scale-105"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <Minus size={18} className="relative group-hover:scale-110 transition-transform" />
@@ -933,7 +933,7 @@ const res = await fetch(`${API_BASE_URL}/inventory_update.php`, {
                 {user.role === "admin" && (
                   <button
                     onClick={() => setModalOpen("receive")}
-                    className="group relative flex-1 sm:flex-auto flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-2xl hover:shadow-2xl hover:shadow-emerald-500/50 transition-all duration-300 font-semibold overflow-hidden transform hover:scale-105"
+                    className="group relative flex-1 sm:flex-auto flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-gray-400 rounded-2xl hover:shadow-2xl hover:shadow-emerald-500/50 transition-all duration-300 font-semibold overflow-hidden transform hover:scale-105"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-teal-600 to-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <Plus size={18} className="relative group-hover:scale-110 transition-transform" />
