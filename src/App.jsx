@@ -153,7 +153,8 @@ document.head.appendChild(style);
 // ======================
 // ตั้งค่า API (PHP + MySQL)
 // ======================
-const API_BASE_URL = "https://inventory-backend-apn6.onrender.com";
+// เติม /api ต่อท้ายตรงนี้เลย
+const API_BASE_URL = "https://inventory-backend-apn6.onrender.com/api";
 
 // ใช้ SweetAlert2 ถ้ามีโหลดจาก CDN
 const Swal = window.Swal || null;
@@ -197,7 +198,7 @@ const LoginPage = ({ onLogin }) => {
     setLoading(true);
 
     try {
-      const res = await fetch("https://inventory-backend-apn6.onrender.com/api/login.php", {
+      const res = await fetch(`${API_BASE_URL}/login.php`, { 
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -555,7 +556,8 @@ const handleTransaction = async (type) => {
   }
 
   try {
-    const res = await fetch('https://inventory-backend-apn6.onrender.com/api/inventory_update.php', {
+    // ลบคำว่า api ออกจากชื่อไฟล์ เพราะมันอยู่ในตัวแปร API_BASE_URL แล้ว
+const res = await fetch(`${API_BASE_URL}/inventory_update.php`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
