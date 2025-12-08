@@ -1,1 +1,35 @@
+<<<<<<< HEAD
 {"name":"inventory-frontend","private":true,"version":"1.0.0","type":"module","scripts":{"dev":"vite","build":"vite build","lint":"eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0","preview":"vite preview"},"dependencies":{"@neondatabase/serverless":"^1.0.2","lucide-react":"^0.395.0","react":"^18.3.1","react-dom":"^18.3.1","sweetalert2":"^11.10.1"},"devDependencies":{"@types/react":"^18.3.3","@types/react-dom":"^18.3.0","@vitejs/plugin-react":"^4.3.1","autoprefixer":"^10.4.22","eslint":"^8.57.0","eslint-plugin-react":"^7.34.2","eslint-plugin-react-hooks":"^4.6.2","eslint-plugin-react-refresh":"^0.4.7","postcss":"^8.5.6","tailwindcss":"^3.4.18","vite":"^5.3.1"}}
+=======
+{
+  "name": "inventory-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "vite": "npm:rolldown-vite@7.2.5"
+  },
+  "overrides": {
+    "vite": "npm:rolldown-vite@7.2.5"
+  }
+}
+>>>>>>> 99cb592d6ac78b8dc656e41bb61066cb9371dd5f
